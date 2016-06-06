@@ -7,9 +7,45 @@
 //
 
 #include <iostream>
+#include <cstdlib>
+#include "circ_buf.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+struct S {
+    virtual void f(){};
+    virtual ~S(){};
+};
+
+struct S1: S {
+    void f() override {
+        cout << "override" << endl;
+    }
+};
+int main()
+{
+    circ_buf<int> ringBuffer = circ_buf<int>();
+    
+    ringBuffer.put_item(3);
+    ringBuffer.put_item(6);
+    ringBuffer.put_item(7);
+    ringBuffer.put_item(2);
+    //ringBuffer.put_item(2);
+    //ringBuffer.put_item(2);
+//    cout<< ringBuffer.space() << endl;
+//        ringBuffer.space();
+
+
+
+    
+
+    
+//    for (int i = 0; i < ringBuffer.count(); i++){
+//        cout << ringBuffer.get_item() << endl;
+//    }
+    
+    cout << "\n\n";
+    
+    system("PAUSE");
+    
     return 0;
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		708A5BD51D016F9A003BAB3C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 708A5BD41D016F9A003BAB3C /* main.cpp */; };
+		708A5BDE1D01705E003BAB3C /* bad_circle_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 708A5BDB1D01705E003BAB3C /* bad_circle_exception.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		708A5BD11D016F9A003BAB3C /* circ_buf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = circ_buf; sourceTree = BUILT_PRODUCTS_DIR; };
 		708A5BD41D016F9A003BAB3C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		708A5BDB1D01705E003BAB3C /* bad_circle_exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bad_circle_exception.cpp; sourceTree = "<group>"; };
+		708A5BDC1D01705E003BAB3C /* bad_circle_exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bad_circle_exception.h; sourceTree = "<group>"; };
+		708A5BDD1D01705E003BAB3C /* circ_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circ_buf.h; sourceTree = "<group>"; };
+		810D94851D042BC6004AEC8E /* circ_buff_realization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = circ_buff_realization.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,10 @@
 		708A5BD31D016F9A003BAB3C /* circ_buf */ = {
 			isa = PBXGroup;
 			children = (
+				708A5BDB1D01705E003BAB3C /* bad_circle_exception.cpp */,
+				708A5BDC1D01705E003BAB3C /* bad_circle_exception.h */,
+				810D94851D042BC6004AEC8E /* circ_buff_realization.h */,
+				708A5BDD1D01705E003BAB3C /* circ_buf.h */,
 				708A5BD41D016F9A003BAB3C /* main.cpp */,
 			);
 			path = circ_buf;
@@ -119,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				708A5BD51D016F9A003BAB3C /* main.cpp in Sources */,
+				708A5BDE1D01705E003BAB3C /* bad_circle_exception.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +249,7 @@
 				708A5BDA1D016F9A003BAB3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
